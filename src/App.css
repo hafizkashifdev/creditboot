@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #585a61;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #1F2937;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+a:hover {
+  color: #7b94c9;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 140px 0 100px 0;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  right: -100%;
+  top: 20%;
+  width: 250%;
+  height: 200%;
+  z-index: -1;
+  background-color: #e8ecf5;
+  transform: skewY(135deg);
+}
+
+#hero h1 {
+  margin: 0 0 10px 0;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 56px;
+  color: #1F2937;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero h2 {
+  color: #4B5563;
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+
+ #hero .download-btn {
+  border-radius: 100px;
+  background-color: #D22126;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  padding: 0.5rem 0.5rem;
+  margin: 24px 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 368px;
+  height: 48px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center; /* Add this line to center the text vertically */
+  border: 1px solid #D22126;
   color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 992px) {
+  #hero .download-btn {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+#hero .download-btn:hover {
+  background-color: #EEC932;
+  border-color: #EEC932;
+}
+@media (max-width: 991px) {
+  #hero {
+    text-align: center;
+  }
+
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+  #hero .download-btn{
+    font-size: 13px;
   }
 }

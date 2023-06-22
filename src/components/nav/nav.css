@@ -1,0 +1,90 @@
+.custombutton {
+    border-radius: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 0.6rem 2rem;
+    color: #D22126;
+    border: 1px solid #D22126;
+    width: 100%;
+    height: 44px;
+    text-transform: capitalize;
+    /* margin-right: 10px; Add this line to apply margin-right */
+
+    
+  }
+  
+  .custombutton:hover {
+    color: white;
+    background-color: #D22126;
+  }
+  
+  .accentcustombutton {
+    border-radius: 100px;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    padding: 0.6rem 2rem;
+    width: 100%;
+    height: 44px;
+    text-transform: capitalize;
+    background-color: #D22126;
+    border: 1px solid #D22126;
+    color: white;
+  }
+  
+  .accentcustombutton:hover {
+    background-color: #EEC932;
+    border-color: #EEC932;
+  }
+  
+  @media (max-width: 992px) {
+    .accentcustombutton {
+      margin-top: 14px;
+      /* margin-right: 0; Reset margin-right for smaller screens */
+    }
+  }
+  .button-wrapper {
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 992px) {
+    .custombutton {
+      margin-top: 12px;
+      /* margin-right: 0; Reset margin-right for smaller screens */
+    }}
+
+    
+    @media (max-width: 600px) {.logo-text{
+        font-size: 0.94rem !important;
+
+    }}
+
+    .navbar {
+      background-color: transparent;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    .navbar.scrolled {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar .navbar-brand {
+      color: #fff;
+      /* Add any styles you want for the logo */
+    }
+    
+    .navbar.scrolled .navbar-brand {
+      color: #333;
+      /* Adjust the color for the logo when the navbar is scrolled */
+    }
+    
+    .navbar .nav-link {
+      color: #fff;
+      /* Add any styles you want for the navigation links */
+    }
+    
+    .navbar.scrolled .nav-link {
+      color: #333;
+      /* Adjust the color for the navigation links when the navbar is scrolled */
+    }
+    
